@@ -1,0 +1,122 @@
+:root {
+    --border-top-left-radius: 0;
+    --border-top-right-radius: 0;
+    --border-bottom-left-radius: 0;
+    --border-bottom-right-radius: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(76, 56, 189);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    gap: 3em;;
+}
+
+
+fieldset {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 15px 50px 20px;
+    background-color: rgb(92, 76, 184);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+legend {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    background-color: rgb(124, 113, 189);
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+label {
+    font-size: 1.1em;
+    color: white;
+}
+
+.input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1em;
+    margin: 5px 0 10px;
+    border: 2px solid black;
+    background-color: rgb(182, 180, 193);
+
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.1em;
+    border: none;
+    outline: none;
+
+    transition: .3s;
+}
+
+button:active {
+    background-color: rgb(124, 113, 189);
+    color: white;
+    outline: 1px solid black;
+    border: none;
+    letter-spacing: 1px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radius {
+    width: 25em;
+    height: 13em;
+    background-color: white;
+    border-top-left-radius: var(--border-top-left-radius);
+    border-top-right-radius: var(--border-top-right-radius);
+    border-bottom-left-radius: var(--border-bottom-left-radius);
+    border-bottom-right-radius: var(--border-bottom-right-radius);
+
+    border: 2px solid rgb(255, 255, 255);
+    background-image: url(../images/background.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 860px){
+    .content {
+        flex-direction: column;
+    }
+
+    .radius {
+        width: 30vw;
+        height: 15vw;
+    }
+    
+}
