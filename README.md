@@ -1,4 +1,4 @@
-# ⭕ Border Radius Previewer
+# ⭕ Border Radius Previewer 1.0
 ## Border Radius Previewer is an interactive tool developed using HTML, CSS and JavaScript, designed to make it easier to visualize the effect of border-radius on HTML elements. This project allows users to adjust the roundness of a box's corners and see the changes in real time. Idea taken from the repository:<a href="https://github.com/florinpop17/app-ideas?tab=readme-ov-file">app-ideas.</a>
 
 # 💻 Technologies
